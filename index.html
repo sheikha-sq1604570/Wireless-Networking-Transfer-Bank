@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="container" data-new-gr-c-s-check-loaded="14.995.0" data-gr-ext-installed="">
+<h1>Wireless Networking Transfer Bank</h1>
+<hr>
+<nav>
+    <ul>
+
+        <li><a href="index.html">Home</a>
+        </li>
+        <li onclick="loadPage('add-acct.html')">
+            <a href="#">Add Account</a>
+        </li>
+        <li onclick="loadPage('acct-trans.html')">
+            <a href="#">Add Transaction</a>
+        </li>
+    </ul>
+</nav>
+<hr>
+<main id="main">
+    <br>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Account Type
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li onclick="handleLoadAccounts('All')"><a href="#">All</a></li>
+            <li onclick="handleLoadAccounts('Saving')"><a href="#">Saving</a></li>
+            <li onclick="handleLoadAccounts('Current')"><a href="#">Current</a></li>
+        </ul>
+    </div>
+    <br>
+    <div id="accounts-table"><table id="accounts" class="table">
+        <tbody><tr>
+            <th>Account No</th>
+            <th>Account Type</th>
+            <th>Balance</th>
+            <th>Operation</th>
+        </tr>
+
+        <tr id="row-1602821627042">
+            <td>1602821627042</td>
+            <td>Saving</td>
+            <td>10888</td>
+            <td>
+                <button onclick="handleDeleteAccount(1602821627042)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button onclick="alert(&quot;You will be able to edit account(disabled)&quot;)">
+                    <i class="fas fa-edit"></i>
+                </button>
+
+
+
+            </td>
+        </tr>
+
+        <tr id="row-1602821641565">
+            <td>1602821641565</td>
+            <td>Current</td>
+            <td>5000</td>
+            <td>
+                <button onclick="handleDeleteAccount(1602821641565)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button onclick="alert(&quot;You will be able to edit account(disabled)&quot;)">
+                    <i class="fas fa-edit"></i>
+                </button>
+
+
+
+            </td>
+        </tr>
+
+        <tr id="row-1602821669642">
+            <td>1602821669642</td>
+            <td>Current</td>
+            <td>8967</td>
+            <td>
+                <button onclick="handleDeleteAccount(1602821669642)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button onclick="alert(&quot;You will be able to edit account(disabled)&quot;)">
+                    <i class="fas fa-edit"></i>
+                </button>
+
+
+
+            </td>
+        </tr>
+
+        <tr id="row-1602821657478">
+            <td>1602821657478</td>
+            <td>Saving</td>
+            <td>7878</td>
+            <td>
+                <button onclick="handleDeleteAccount(1602821657478)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button onclick="alert(&quot;You will be able to edit account(disabled)&quot;)">
+                    <i class="fas fa-edit"></i>
+                </button>
+
+
+
+            </td>
+        </tr>
+
+        <tr id="row-1603550082081">
+            <td>1603550082081</td>
+            <td>Saving</td>
+            <td>123</td>
+            <td>
+                <button onclick="handleDeleteAccount(1603550082081)">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button onclick="alert(&quot;You will be able to edit account(disabled)&quot;)">
+                    <i class="fas fa-edit"></i>
+                </button>
+
+
+
+            </td>
+        </tr>
+
+        </tbody></table><table></table></div>
+</main>
+<script src="js/index.js"></script>
+
+</body>
+<footer>
+    <h5> Team members:</h5>
+    <h5>
+        Amna Al-jaber - 201602160
+    </h5>
+    <h5>
+        Sheikha AL-Guwaizi - 201604570
+    </h5>
+    <h5>
+        Yomna Hemid - 201602447
+    </h5>
+    <h5>
+        Roudha Mohammed - 200754696
+    </h5>
+</footer>
+</html>
